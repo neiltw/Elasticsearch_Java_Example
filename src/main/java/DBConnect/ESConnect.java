@@ -22,13 +22,13 @@ public class ESConnect {
 
     /**
      * Connect ES Server
-     * @param clusterName
-     * @param host
+     * @param CLUSTERNAME
+     * @param HOST
      * **/
-    public void EsConnect(String clusterName , String host) {
+    public void EsConnect(String CLUSTERNAME , String HOST) {
         try {
             settings = Settings.settingsBuilder()
-                    .put("cluster.name", clusterName)
+                    .put("cluster.name", CLUSTERNAME)
                     .put("client.transport.ping_timeout", "30s") // default 5s
                     .put("client.transport.sniff", false).build();
             System.out.println("Connect elasticsearch database..........");
@@ -36,7 +36,7 @@ public class ESConnect {
                     .builder()
                     .settings(settings)
                     .build()
-                    .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(host), 9300));
+                    .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(HOST), 9300));
         } catch (UnknownHostException e) {
             System.err.println("Connect elasticsearch error ");
             e.printStackTrace();
