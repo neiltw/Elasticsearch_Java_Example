@@ -13,9 +13,9 @@ public class SearchMain {
     public static void main (String[] args){
 
         String CLUSTER_NAME = "elasticsearch";              //ES ClusterName
-        String ELASTICSEARCH_HOST = "localhost" ;  //ES host
-        String ES_INDEX = "test";                  //specific elasticsearch index
-        String ES_TYPE = "model";                    //specific elasticsearch type
+        String ELASTICSEARCH_HOST = "localhost" ;           //ES host
+        String ES_INDEX = "test";                           //specific elasticsearch index
+        String ES_TYPE = "model";                           //specific elasticsearch type
 
         //setting es clustName , ip address
         esclient.EsConnect(CLUSTER_NAME, ELASTICSEARCH_HOST);
