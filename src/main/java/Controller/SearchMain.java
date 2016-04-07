@@ -6,11 +6,12 @@ import Service.*;
 /**
  * Created by Neil on 4/6/16.
  */
-public class SearchXyzmodelExample {
+public class SearchMain {
 
     private static ESConnect esclient = new ESConnect();
 
     public static void main (String[] args){
+
         String CLUSTER_NAME = "elasticsearch";              //ES ClusterName
         String ELASTICSEARCH_HOST = "localhost" ;  //ES host
         String ES_INDEX = "test";                  //specific elasticsearch index
