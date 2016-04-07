@@ -1,10 +1,10 @@
 # Elasticsearch_Java_Example
-Using elasticsearch search API for java 
+Using elasticsearch search API 2.3 for JAVA 
 
-# Search term
+## Search terms
 
-# Search range
+## Search range
 
-# Search sort by date
+## Search sort by date
 
-# Search scroll
+## Search scroll
