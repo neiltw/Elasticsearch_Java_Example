@@ -19,16 +19,6 @@ public class SearchTermFilter {
 
     /**
      *  search multi filter category id
-     *  category type
-     *  1 Art
-     *  2 Fashion
-     *  3 Office
-     *  4 Gadgets
-     *  5 Housewares
-     *  6 Education
-     *  7 Tools
-     *  8 Toys
-     *  9 2.0 Duo
      *
      * @param ES        elasticsearch client
      * @param ES_INDEX  elasticsearch index
